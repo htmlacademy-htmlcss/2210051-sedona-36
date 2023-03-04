@@ -37,7 +37,7 @@
         </ul>
       </nav>
     </header>
-
+    <div class="page-conainer">
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -45,9 +45,6 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html"><span><img src="images/home.svg" width="12" height="12"
                   alt="Главная"></span><span class="visually-hidden">Главная</span></a>
-          </li>
-          <li class="breadcrumbs-item">
-            <img src="/images/arrow.svg" width="6" height="10px" alt="стрелка">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
@@ -78,19 +75,24 @@
         </section>
       </header>
       <section class="catalog">
+        <div class="sorting-frame">
         <h2 class="catalog-heading">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
         </select>
-        <a href="#" class="view-button button-table"><span><img src="images/table.svg" width="48" height="48"
+        <div class="view-buttons">
+        <a href="#" class="button-table"><span><img src="images/table.svg" width="48" height="48"
               alt="Таблица"></span><span class="visually-hidden">Показать таблицу</span>
         </a>
-        <a href="#" class="view-button button-slide"><span><img src="images/slide.svg"
-              width="48" height="48" alt="Слайд-шоу"></span><span class="visually-hidden">Показать слайд-шоу</span>
+        <a href="#" class="button-slide"><span><img src="images/slide.svg" width="48" height="48"
+              alt="Слайд-шоу"></span><span class="visually-hidden">Показать слайд-шоу</span>
         </a>
-        <a href="#" class="view-button button-list"><span><img src="images/list.svg" width="48"
-              height="48" alt="Список"></span><span class="visually-hidden">Показать список</span>
+        <a href="#" class="button-list"><span><img src="images/list.svg" width="48" height="48"
+              alt="Список"></span><span class="visually-hidden">Показать список</span>
         </a>
+      </div>
+        </div>
+        <section class="hotel-catalog">
         <div class="housing-card">
           <a class="housing-card-link" href="#"><img class="housing-card-image" src="images/amara-resort-spa.jpg"
               alt="Изображение гостиницы"></a>
@@ -138,6 +140,7 @@
           <p class="stars star-5"><span class="visually-hidden">2 звезды</span></p>
           <p class="rating">Рейтинг:5,0</p>
         </div>
+      </section>
         <ul class="pagination">
           <li class="pagination-item pagination-current">
             <a class="pagination-link">1</a>
@@ -160,13 +163,14 @@
         </ul>
       </section>
 
-      <section class="newsletter">
-        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p class="newsletter-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="newsletter-catalog">
+        <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-catalog-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</br></p>
+        <div class="subscribe">
         <input class="field" placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email"
           required>
-        <button class="blue-button" type="submit">Подписаться
-        </button>
+        <button class="subscribe-button" type="submit">Подписаться
+        </button></div>
       </section>
     </main>
 
